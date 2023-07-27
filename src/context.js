@@ -36,7 +36,7 @@ export class UserProvider extends Component {
         salary: "5000",
         password:  "eylul12345",
         mail:   "",
-        imageUrl: "", 
+        imageUrl: "fsdfdfsdsdfsdfd", 
         
       },
       {
