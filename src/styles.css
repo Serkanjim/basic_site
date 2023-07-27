@@ -1,0 +1,233 @@
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.001em;
+  line-height: 1.3;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 100;
+  background-color: rgb(255, 255, 255);
+  color: #15327a;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  
+  font-family: 'Kanit', sans-serif;
+  margin-right: 0px;
+  font-size: 20px;;
+  font-weight: 1000;
+  padding-left: 0px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.topmenu li {    
+  display:inline-block; 
+  font-size: 1.5em;
+  text-align: right;
+}
+
+
+
+#AddUserForm {
+  
+  width:  500px;
+  height: auto;
+  margin: auto;
+  border: 7px  inset rgb(63,140,181);
+  border-top-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-bottom-color: rgb(238, 238, 238);
+  border-radius: 50px;
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(63,81,181);
+ 
+}
+
+.message{
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.form-group {
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  width: 251px;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+}
+
+.form-control{
+  font-family: 'Kanit', sans-serif;
+  border: auto;
+  font-size: auto;
+  font-weight: 1000;
+  width: 250px;
+  
+}
+.form-control-password{
+  font-family: 'Kanit', sans-serif;
+  background-color: white;
+  font-size: auto;
+  font-weight: 1000;
+  width: 250px;
+  height: 34px;
+  border-radius: 5px;
+  
+}
+
+.btn{
+  width: 200px;
+  height: 50px;
+  margin: 7px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  font-weight: 1000;
+  text-align: center;
+  background-color: rgb(63,140,181);
+  border-top-color: rgb(63,140,181);
+  border-left-color: rgb(63,140,181);
+  border-right-color: rgb(63,140,181);
+  border-bottom-color: rgb(63,140,181);
+}
+
+.btn:hover {
+  background-color: rgb(63,100,255); /* Linkin üzerine gelindiğinde rengi kırmızı yap */
+  border-top-color: rgb(63,140,181);
+  border-left-color: rgb(63,140,181);
+  border-right-color: rgb(63,140,181);
+  border-bottom-color: rgb(63,140,181);
+}
+.profile-image{
+
+
+  height: 150px;
+  width: 150px;
+
+}
+
+.imagepicker{
+
+font-size: large;
+
+}
+
+.label{ 
+  
+  display: block; 
+  width: 100px; 
+
+}
+
+.card-body{
+
+
+  width: 380px;
+}
+
+.card-header{
+
+  border: 3px inset;
+  width: 300px;
+  background-color: #007bff;
+  border-radius: 50px;
+}
+
+
+.col{
+  
+  
+  width: 400px;
+  
+}
+
+
+
+
+.inputlabel{
+
+  text-decoration: none;
+
+
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+
+  text-decoration: none;
+}
+
+.sdsd{
+
+  
+  text-decoration: none;
+}
+
+.imagepicker {
+  color: white;
+  font-size: small;
+  width: 150px;
+}
+.SignUpUser{
+  
+  width:  500px;
+  height: auto;
+  margin: auto;
+  border: 5px  inset rgb(63,140,181);
+  border-top-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-bottom-color: rgb(238, 238, 238);
+  border-radius: 50px;
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(63,81,181);
+ 
+}
+
