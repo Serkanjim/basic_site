@@ -21,53 +21,105 @@
   import NoPage from './pages/NoPage';
   import Profile from './pages/Profile'; 
   import ProfileUser from './components/ProfileUser';
-
+  import { Helmet, HelmetProvider } from "react-helmet-async";
+  import FlowStreamPage from './pages/FlowStreamPage';
   function App() {
     const [count, setCount] = useState(0);
-  []
-
+  
     function handleClick() {
-      setCount(count + 1);  
+      setCount(count + 1);
     }
-
-
+  
     return (
-            <div>
-              <Navbar/>
-              <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/register" element={<SignUp/>}/>
-                <Route path="/register" element={<Profile/>}/>
-                {/* Yeni eklenen profil sayfası rotası */}
-                <Route path="/profile/:user_id" element={<ProfileUser/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="*" element={<NoPage/>}/>
-              </Routes>
-    </div>
-
-      /*
-      {(typeof backendData.users == "undefined" ) ? (
-          <p>Loading</p>
-      ): (
-          backendData.users.map((user, i )=>(
-            <p key ={i}> {user}</p>
-          ))
-      )}
-      
-      */
-      
-    
+      <HelmetProvider>
+        <div>
+          <Helmet>
+            <html lang="en" />
+            <title>{"Your Default Title"}</title>
+            <meta name="description" content="Your default description" />
+          </Helmet>
+  
+          <Navbar />
+  
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"Home Page"}</title>
+                    <meta name="description" content="This is the home page" />
+                  </Helmet>
+                  <Home />
+                </div>
+              }
+            />
+            <Route
+              path="/register"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"Register Page"}</title>
+                    <meta name="description" content="This is the register page" />
+                  </Helmet>
+                  <SignUp />
+                </div>
+              }
+            />
+            <Route
+              path="/flowstream"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"Flowstream Page"}</title>
+                    <meta name="description" content="This is the flowstream page" />
+                  </Helmet>
+                  <FlowStreamPage />
+                </div>
+              }
+            />
+            {/* Yeni eklenen profil sayfası rotası */}
+            <Route
+              path="/profile/:user_id"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"Your profile page"}</title>
+                    <meta name="description" content="Your profile page" />
+                  </Helmet>
+                  <ProfileUser />
+                </div>
+              }
+            />
+            <Route
+              path="/login"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"Login Page"}</title>
+                    <meta name="description" content="This is the login page" />
+                  </Helmet>
+                  <Login />
+                </div>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <div>
+                  <Helmet>
+                    <title>{"No Page"}</title>
+                    <meta name="description" content="Page not founded" />
+                  </Helmet>
+                  <NoPage />
+                </div>
+              }
+            />
+          </Routes>
+        </div>
+      </HelmetProvider>
     );
   }
-
-  function MyButton({ count, onClick }) {
-    return (
-      <button onClick={onClick}>
-        Clicked {count} times
-      </button>
-    );
-  }
-
+  
   export default App;
-
-
+  
